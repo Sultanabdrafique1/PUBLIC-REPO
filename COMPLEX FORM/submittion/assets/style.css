@@ -1,0 +1,58 @@
+/* Google Fonts Import, DM Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Image Reset */
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Root */
+
+:root {
+    --primary-font-family: 'DM Sans';
+    --primary-bg-color: #005CE6;
+    --secondary-bg-color: #023E8A;
+    --tertiary-bg-color: #a2d2ff68;
+    --quartenary-bg-color: #B2B1B6;
+    --primary-text-color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+div.img-txt {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4rem;
+    font-family: var(--primary-font-family);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div.img-txt > img {
+    width: 450px;
+}
+
+div.img-txt > p {
+    font-size: 1.2rem;
+}
+
+

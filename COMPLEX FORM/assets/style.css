@@ -1,0 +1,250 @@
+/* Google Fonts Import, DM Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Image Reset */
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Root */
+
+:root {
+    --primary-font-family: 'DM Sans';
+    --primary-bg-color: #005CE6;
+    --secondary-bg-color: #023E8A;
+    --tertiary-bg-color: #a2d2ff68;
+    --quartenary-bg-color: #B2B1B6;
+    --primary-text-color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styles */
+
+div.img {
+    background-color: var(--tertiary-bg-color);
+    height: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.img > img {
+    width: 400px;
+}
+
+/* Form Styles */
+
+div.form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--primary-font-family);
+}
+
+/* Intro Styles */
+
+div.form > div.intro {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+} 
+
+div.form > div.intro > h1 {
+    color: var(--secondary-bg-color);
+}
+
+div.form > div.intro > p {
+    font-size: 1.05rem;
+    color: var(--quartenary-bg-color);
+}
+
+div.form > div.intro > p > a.sign-in {
+    text-decoration: none;
+    color: var(--primary-bg-color);
+    display: inline-block;
+}
+
+/* Form Styles */
+
+div.form > form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.85rem;
+}
+
+/* Username Styles */
+
+div.form > form > div.username > label {
+    color: var(--secondary-bg-color);
+    font-size: 1.1rem;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
+div.form > form > div.username > div.user-input {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    border: 2px solid var(--quartenary-bg-color);
+    padding: 12px;
+    border-radius: 10px;
+    transition: border 0.4s ease-in-out;
+}
+
+div.form > form > div.username > div.user-input:hover {
+    border: 2px solid var(--primary-bg-color);
+}
+
+div.form > form > div.username > div.user-input > input[type=text] {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: var(--primary-font-family);
+    color: var(--secondary-bg-color);
+}
+
+div.form > form > div.username > div.user-input > input[type=text]::placeholder {
+    font-family: var(--primary-font-family);
+}
+
+
+div.form > form > div.username > div.user-input > span > i {
+    font-size: 1.2rem;
+    color: var(--secondary-bg-color);
+    transition: color 0.4s ease-in-out;
+}
+
+
+/* Email */
+
+div.form > form > div.email > label {
+    color: var(--secondary-bg-color);
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+div.form > form > div.email > div.user-email {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    border: 2px solid var(--quartenary-bg-color);
+    padding: 12px;
+    border-radius: 10px;
+    transition: border 0.4s ease-in-out;
+}
+
+div.form > form > div.email > div.user-email:hover {
+    border: 2px solid var(--primary-bg-color);
+}
+
+div.form > form > div.email > div.user-email > input[type=email] {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: var(--primary-font-family);
+    color: var(--secondary-bg-color);
+}
+
+div.form > form > div.email > div.user-email > span > i {
+    color: var(--secondary-bg-color);
+    transition: color 0.4s ease-in-out;
+}
+
+/* Password Styles */
+
+div.form > form > div.password > label {
+    color: var(--secondary-bg-color);
+    font-size: 1.1rem;
+     display: inline-block;
+   margin-bottom: 10px;
+}
+
+div.form > form > div.password > div.user-password {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    border: 2px solid var(--quartenary-bg-color);
+    padding: 12px;
+    border-radius: 10px;
+    transition: border 0.4s ease-in-out;
+}
+
+div.form > form > div.password > div.user-password:hover {
+    border: 2px solid var(--primary-bg-color);
+}
+
+div.form > form > div.password > div.user-password > input[type=password] {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: var(--primary-font-family);
+    color: var(--secondary-bg-color);
+}
+
+div.form > form > div.password > div.user-password > span > i {
+    color: var(--secondary-bg-color);
+    transition: color 0.4s ease-in-out;
+}
+
+div.form > form > input[type=submit] {
+    margin-top: 0.75rem;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: var(--primary-font-family);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+div.form > form > input[type=submit]:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 950px) {
+    div.hide {
+        display: none;
+    }
+}

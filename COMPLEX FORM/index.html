@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a1d58f5e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="img hide">
+        <img src="assets/imgs/sign up/undraw_sign-up_z2ku.svg" alt="Sign-Up Image" width="500">
+    </div>
+    <div class="form">
+        <div class="intro">
+            <h1>Sign Up For Free</h1>
+            <p>Already have an account? <a href="#" class="sign-in">Sign in</a></p>
+        </div>
+    <form action="submittion/index.html" method="get">
+        <div class="username">
+            <label for="username">Name</label>
+            <br>
+            <div class="user-input">
+            <input type="text" name="username" id="username" placeholder="Your name" required autofocus>
+            <span><i class="fa-solid fa-circle-user"></i></span>
+            </div>
+        </div>
+        <div class="email">
+            <label for="email">Email</label>
+            <br>
+            <div class="user-email">
+            <input type="email" name="email" id="email" placeholder="eg; johndoe@gmail.com" required>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            </div>
+        </div>
+        <div class="password">
+            <label for="password">Password</label><br>
+            <div class="user-password">
+            <input type="password" name="password" id="password" placeholder="*********" required>
+            <span>
+            <i class="fa-solid fa-lock"></i>
+            </span>
+            </div>
+        </div>
+        <input type="submit" value="SIGN UP">
+    </form>
+    </div>
+</body>
+</html>
