@@ -1,0 +1,252 @@
+/* Google fonts Import DM Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root */
+
+:root {
+    --primary-font-family: 'DM Sans';
+    --primary-color: #6C63FF;
+    --secondary-color: #EDF2FB;
+    --tertiary-color: #B6CCFE;
+    --quaternary-color: #F8F9FA;
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #000000;
+}
+
+/* HTML */
+
+html {
+    scroll-behavior: smmoth;
+}
+
+/* Body */
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--quaternary-color);
+}
+
+/* Card Styles */
+
+div.card {
+    display: flex;
+    flex-flow: column nowrap;
+    /* gap: 0rem; */
+    background-color: var(--primary-text-color);
+    width: 400px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.card > div.imgs {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.card > div.imgs > div.big-img {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 16px;
+}
+
+div.card > div.imgs > div.big-img > img {
+    width: 350px;
+    height: 150px;
+}
+
+div.card > div.imgs > div.small-img {
+    position: relative;
+    left: 10px;
+    top: -90px;
+}
+
+div.card > div.imgs > div.small-img > img {
+    width: 100px;
+}
+
+div.card > div.active {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-text-color);
+    border-radius: 50%;
+    top: -110px;
+    left: 83px;
+}
+
+/* Inner Styles */
+
+div.card > div.inner {
+    position: relative;
+    top: -100px;
+    width: 350px;
+    height: 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px;
+    gap: 1rem;
+    font-family: var(--primary-font-family);
+}
+
+div.card > div.inner > div.name-bookmark {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+div.card > div.inner > div.name-bookmark > div.person-name {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.25rem;
+}
+
+div.card > div.inner > div.name-bookmark > div.person-name > p:nth-child(1) {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+div.card > div.inner > div.name-bookmark > div.person-name > p:nth-child(2) {
+    font-size: 1rem;
+    color: #A79090;
+}
+
+div.card > div.inner > div.name-bookmark > div.bookmark {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+div.card > div.inner > div.name-bookmark > div.bookmark > span > i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+div.card > div.inner > div.services {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.6rem
+   /*  margin-left: 20px; */
+}
+
+div.card > div.inner > div.services > a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-color);
+    padding: 9px;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: 550;
+}
+
+div.card > div.inner > div.services > a:nth-child(4) {
+    background: none;
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+}
+
+div.card > div.inner > div.highlights {
+    margin-top: 1rem;
+    margin-left: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+
+div.card > div.inner > div.highlights > div.gap {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+div.card > div.inner > div.highlights > div.gap > span {
+    font-size: 1.5rem;
+}
+
+div.card > div.inner > div.highlights > div.gap > span {
+    color: var(--primary-color);
+}
+
+div.card > div.inner > div.highlights > div.gap > span {
+    font-weight: 600;
+}
+
+div.card > div.inner > div.highlights > div.gap > p {
+    color: #A79090;
+}
+
+div.card > div.inner > div.cta-btn {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.card > div.inner > div.cta-btn > a.cta {
+    width: 350px;
+    text-align: center;
+    background-color: var(--secondary-text-color);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: 15px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+div.card > div.inner > div.cta-btn > a.cta:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 500px) {
+    div.card {
+        width: 350px;
+    }
+
+    div.card > div.inner {
+        width: 300px;
+        height: 200px;
+    }
+
+    div.card > div.inner > div.services > a {
+        font-size: 12px;
+    }
+
+    div.card > div.inner > div.cta-btn > a.cta {
+        width: 300px;
+    }
+
+    div.card > div.inner > div.cta-btn > a.cta:hover {
+        transform: translateY(0px);
+    }
+} 
+
+
+
+
+
+
+
+
