@@ -1,0 +1,147 @@
+/* Google Import Fonts = 'DM Sans' */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Body Reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Image Reset */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    -webkit-user-drag: none;         
+}
+
+
+/* Root */
+
+:root {
+    --primary-font-family: 'DM Sans';
+    --primary-color: #ADB5BD;
+    --secondary-color: #FAEDCD;
+}
+
+/* HTML Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F8F4F4;
+}
+
+/* Blog Card Styles */
+
+div.blog-card {
+    width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px;  
+    font-family: var(--primary-font-family);               
+}
+
+div.blog-card > div.profile-more {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.blog-card > div.profile-more > div.profile-pic-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+div.blog-card > div.profile-more > div.profile-pic-text > img {
+    width: 45px;
+}
+
+div.blog-card > div.profile-more > div.profile-pic-text > div.txt > p.bold {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+div.blog-card > div.profile-more > div.profile-pic-text > div.txt > p:nth-child(2) {
+    font-size: 0.95rem;
+    color: var(--primary-color);
+}
+
+div.blog-card > div.profile-more > div.icon-ellipsis > span > i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+div.blog-card > div.sec-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+div.blog-card > div.sec-2 > div.img {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.blog-card > div.sec-2 > div.txt-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+div.blog-card > div.sec-2 > div.txt-2 > p:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+div.blog-card > div.sec-2 > div.txt-2 > p:nth-child(2) {
+    color: var(--primary-color);
+}
+
+div.blog-card > div.sec-2 > div.txt-2 > p:nth-child(2) > a {
+    display: inline-block;
+    color: #000000;
+}
+
+div.blog-card > div.sec-2 > div.comment-likes {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+}
+
+div.blog-card > div.sec-2 > div.comment-likes > span > i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    div.blog-card {
+        width: 330px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+}
