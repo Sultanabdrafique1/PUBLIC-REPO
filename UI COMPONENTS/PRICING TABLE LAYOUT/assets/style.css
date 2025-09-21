@@ -1,0 +1,198 @@
+/* Google Fonts Import = 'DM Sans' */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root */
+
+:root {
+    --primary-font-family: 'DM Sans';
+    --primary-color: #9B59B6;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #CED4DA;
+}
+
+/* HTML Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Styles */
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Price Layout Styles */
+
+div.price-layout {
+    font-family: var(--primary-font-family);
+}
+
+div.price-layout > header {
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Price Container Styles */
+
+div.price-layout > div.price-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3rem;
+}
+
+/* Section-1 */
+
+div.price-layout > div.price-container > div.sec-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--primary-font-family);
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid #DDDDDD;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: border 0.2s ease-in-out;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices:focus {
+    border: 5px solid var(--primary-color);
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.1rem;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > div.note-tag {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > div.note-tag > span > i {
+    font-size: 1.3rem;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > div.note-tag > span > i.fa-crown {
+    color: #FECF3E;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > div.note-tag > span > i.fa-shield-halved {
+    color: #38A3A5;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > div.note-tag > span > i.fa-leaf {
+    color: #52B788;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > div.note-tag > p {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > p {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.short-note {
+
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.short-note > p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+div.price-layout > div.price-container > div.sec-1 > button.prices > div.short-note > p > span {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--tertiary-color);
+}
+
+/* Section-2 */
+
+div.price-layout > div.price-container > div.sec-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+div.price-layout > div.price-container > div.sec-2 > header {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+div.price-layout > div.price-container > div.sec-2 > div.features {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+div.price-layout > div.price-container > div.sec-2 > div.features > div.feature {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+@media (max-width: 990px) {
+    div.price-layout > div.price-container {
+        display: flex;
+        flex-flow: column 
+    }
+}
+
+@media (max-width: 700px) {
+    div.price-layout > div.price-container > div.sec-1 > button.prices {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    } 
+    
+    div.price-layout > div.price-container > div.sec-1 > button.prices > div.title > p {
+        text-align: left;
+    }
+    
+}
+
+@media (max-width: 440px) {
+    body {
+        padding: 20px;
+    }
+}
