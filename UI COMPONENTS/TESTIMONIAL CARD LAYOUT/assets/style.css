@@ -1,0 +1,159 @@
+/* Google fonts Import = 'DM Sans' */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/* Viewport reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: aut;
+    display: inline-block;
+}
+
+/* Root */
+:root {
+    --primary-font: 'DM Sans', sans-serif;
+    --primary-color: #A2D2FF;
+    --secondary-color: #333333;
+    --tertiary-color: #D3D3D3;
+    --quaternary-color: #7161EF;
+    --quinternary-color: #FFD60A;
+}
+
+/* HTML Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Styles */
+
+body {
+    min-height: 100vh;
+}
+
+div.testimonials {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--primary-font);
+}
+
+div.testimonials > div.heading {
+    text-align: center;
+}
+
+div.testimonials > div.heading > p:nth-child(1) {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+div.testimonials > div.heading > p:nth-child(2) {
+    color: var(--secondary-color);
+    font-size: 1.11rem;
+    font-weight: 500;
+} 
+
+div.testimonials > div.cards {
+    display: flex;
+    flex-flow: row norap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+div.testimonials > div.cards > div.card {
+    width: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 15px var(--tertiary-color);
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out
+}
+
+div.testimonials > div.cards > div.card:hover {
+    transform: translateY(-10px);
+}
+
+div.testimonials > div.cards > div.card > div.img {
+    position: relative;
+    top: -50px;
+    /* border: 1px solid var(--tertiary-color); */
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowraop;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 15px var(--tertiary-color)
+}
+
+div.testimonials > div.cards > div.card > div.ratings {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+}
+
+div.testimonials > div.cards > div.card > div.ratings > i {
+    color: var(--quinternary-color);
+    font-size: 1.11rem;
+}
+
+div.testimonials > div.cards > div.card > div.name > p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.testimonials > div.cards > div.card > div.speech > p {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.0.5rem;
+    font-weight: 500;
+}
+
+div.testimonials > div.cta-btn > a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--quaternary-color);
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 60px;
+    box-shadow: 2px 2px 18px var(--tertiary-color);
+    text-align: center;
+    width: 270px;
+}
+
+@media (max-width: 1100px) {
+    div.testimonials > div.cards {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 30px;
+        gap: 3rem;
+    }
+
+    div.testimonials > div.cards > div.card {
+        width: 100%;
+    }
+
+    div.testimonials > div.cta-btn {
+        padding: 10px;
+    }
+
+}
