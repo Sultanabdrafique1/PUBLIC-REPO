@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff: 'DM Sans';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+div.container-quote {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: 80vh;
+    font-family: var(--ff);
+}
+
+div.container-quote > p.quote {
+    font-size: 3rem;
+}
+
+div.container-quote > p.name {
+    font-size: 1.7rem;
+}
+
+@media (max-width: 1160px) {
+    div.container-quote > p.quote {
+    font-size: 2.2rem;
+}
+}
+
+@media (max-width: 885px) {
+    div.container-quote > p.quote {
+    font-size: 1.6rem;
+}
+}
+
+@media (max-width: 690px) {
+    div.container-quote > p.quote {
+    font-size: 1.4rem;
+}
+}
+
+@media (max-width: 608px) {
+    div.container-quote > p.quote {
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 524px) {
+    div.container-quote > p.quote {
+    font-size: 1rem;
+}
+}
